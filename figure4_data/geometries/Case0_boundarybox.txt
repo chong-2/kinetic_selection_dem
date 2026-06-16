@@ -1,0 +1,6 @@
+// # ---- Domain setting ----
+domain_size = 0.00043, 0, 0.00027, 0, 5.25e-06, 0
+
+// # ---- Box setting ----
+box_num = 6, 6
+

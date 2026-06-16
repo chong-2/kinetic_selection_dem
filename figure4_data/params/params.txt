@@ -1,0 +1,49 @@
+# Simulation setup file without particle info ####
+
+save_dir = ./
+save_dir = ./
+
+# ---- Time setting ----
+time_end = 180                           # Running time (sec)
+time_step = 1e-5
+time_save = 1e-1                        # Save time interval (sec)
+
+# ---- Particle Props ----
+contact_angle = 0                      # contact angle at fluid/air three phase (degree)
+
+# ---- Wall props ----
+wall_position = 0                       # only z-plane
+
+# ---- Fluid Props ----
+init_polymer_vf = 0.15
+init_fluid_viscosity = 0.6269325122205796
+fluid_viscosity_coeff = 12
+fluid_height = 3.5e-06
+fluid_density = 1000
+fluid_surfacetension = 0.035
+
+# ---- ---- Contact ---- -----
+contact_model = 0
+contact_normal_spring = 100000.0
+contact_tangent_spring = 50000.0
+contact_rolling_spring = 50000.0
+contact_tangent_friction = 0.5
+contact_rolling_friction = 0.3
+
+# ---- ---- Lubrication ---- -----
+lubrication_gap = 0.5                   #
+lubrication_reduce = 1e-3               # roughness (Radius)
+
+# ---- ---- Magnetization ---- -----
+magnetization_model = 0
+magnetization_iter = 15
+magnetization_cutoff = 8
+magnetization_applied = 0, 0, 0.3
+magnetization_Ms = 63570
+magnetization_chi = 2.3149
+magnetization_Nm = 0.19129
+
+# ---- ---- Fluid Evaporation ---- -----
+evaporation_model = 0
+evaporation_rate = 4e-08
+
